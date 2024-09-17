@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <script type="text/javascript">
+      window.tailwind.config = {
+        darkMode: ['class'],
+        theme: {
+          extend: {
+            colors: {
+              border: 'hsl(var(--border))',
+              input: 'hsl(var(--input))',
+              ring: 'hsl(var(--ring))',
+              background: 'hsl(var(--background))',
+              foreground: 'hsl(var(--foreground))',
+              primary: {
+                DEFAULT: 'hsl(var(--primary))',
+                foreground: 'hsl(var(--primary-foreground))'
+              },
+              secondary: {
+                DEFAULT: 'hsl(var(--secondary))',
+                foreground: 'hsl(var(--secondary-foreground))'
+              },
+              destructive: {
+                DEFAULT: 'hsl(var(--destructive))',
+                foreground: 'hsl(var(--destructive-foreground))'
+              },
+              muted: {
+                DEFAULT: 'hsl(var(--muted))',
+                foreground: 'hsl(var(--muted-foreground))'
+              },
+              accent: {
+                DEFAULT: 'hsl(var(--accent))',
+                foreground: 'hsl(var(--accent-foreground))'
+              },
+              popover: {
+                DEFAULT: 'hsl(var(--popover))',
+                foreground: 'hsl(var(--popover-foreground))'
+              },
+              card: {
+                DEFAULT: 'hsl(var(--card))',
+                foreground: 'hsl(var(--card-foreground))'
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        :root {
+          --background: 240 5.9% 10%;
+          --foreground: 0 0% 98%;
+          --primary: 240 5.9% 10%;
+          --primary-foreground: 0 0% 98%;
+          --secondary: 240 4.8% 95.9%;
+        }
+
+        /* Fondo degradado azul a verde */
+        .bg-background {
+          background: linear-gradient(135deg, #1e3a8a, #22c55e); /* De azul a verde */
+        }
+
+        .text-foreground {
+          color: #ffffff; /* Texto blanco para buen contraste */
+        }
+
+        .card {
+          background-color: #ffffff; /* Fondo blanco para las tarjetas */
+          color: #1e3a8a; /* Texto azul para las tarjetas */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-background text-foreground">
+      <main class="px-4 py-8">
+        <section class="text-center">
+          <h1 class="text-4xl font-bold">Préstamo Personal por Transferencia en México</h1>
+        </section>
+        
+        <section class="mt-8">
+          <h2 class="text-2xl font-semibold text-center">Oferta de Préstamo</h2>
+          <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            <div class="card p-4 rounded-lg">
+              <h3 class="text-lg font-semibold">Monto: $500 MXN</h3>
+              <p class="mt-2">Devolución: $550 MXN el próximo mes</p>
+            </div>
+            <div class="card p-4 rounded-lg">
+              <h3 class="text-lg font-semibold">Monto: $1,000 MXN</h3>
+              <p class="mt-2">Devolución: $1,100 MXN el próximo mes</p>
+            </div>
+            <div class="card p-4 rounded-lg">
+              <h3 class="text-lg font-semibold">Monto: $2,000 MXN</h3>
+              <p class="mt-2">Devolución: $2,200 MXN el próximo mes</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-8">
+          <h2 class="text-2xl font-semibold text-center">Requisitos</h2>
+          <ul class="mt-4 list-disc list-inside text-center">
+            <li>✅ Ser mayor de edad</li>
+            <li>✅ Tener empleo estable</li>
+            <li>✅ Contar con una cuenta bancaria para el depósito</li>
+          </ul>
+        </section>
+
+        <section class="mt-8">
+          <h2 class="text-2xl font-semibold text-center">Importante</h2>
+          <p class="mt-4 text-center">❌ No solicitamos ningún pago adelantado ni garantía antes de realizar el préstamo, no chequeamos buró.</p>
+        </section>
+
+        <section class="mt-8">
+          <h2 class="text-2xl font-semibold text-center">Proceso de Solicitud</h2>
+          <ol class="mt-4 list-decimal list-inside text-center">
+            <li>Selecciona "Quiero un préstamo" y proporciona el motivo del préstamo y tu número telefónico.</li>
+            <li>Revisamos que cumplas con todos los requisitos antes de aprobar el préstamo.</li>
+            <li>Aseguramos que el préstamo se otorgue a personas responsables y capaces de devolver el dinero.</li>
+          </ol>
+        </section>
+      </main>
+
+      <section class="text-center"> 
+        <h2 class="text-2xl font-semibold text-center">¡Obtén tu préstamo de manera rápida y sencilla!</h2>
+        <a href="https://tinyurl.com/ms45dthf" class="bg-primary text-primary-foreground rounded-lg px-4 py-2 mt-4 inline-block hover:bg-primary/80">Solicita ya aquí</a>
+      </section>
+      <br>
+      <br>
+      <footer class="bg-primary py-4 text-primary-foreground text-center">
+        <p>&copy; 2024 Lenger Company. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+  </body>
+</html>
